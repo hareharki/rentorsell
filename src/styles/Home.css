@@ -1,0 +1,29 @@
+
+.home {
+    display: block;
+    background-image: url(https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.creativ {
+    margin:0;
+    position:relative;
+    font-size: 10vw;
+    color:cadetblue;
+    -webkit-text-stroke: 0.3vw wheat;
+    text-transform: uppercase;
+}
+
+.creativ::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: transparent;
+    -webkit-text-stroke: 0vw chocolate;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: 3ms linear infinite;
+}
+
