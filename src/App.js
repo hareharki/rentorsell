@@ -5,6 +5,7 @@ import Gap from './pages/Gap';
 import Lac from './pages/Lac';
 import RealEstates from './pages/RealEstates';
 import Home from './pages/Home';
+import { Footer } from './components/Footer';
 
 function App(){
       return(
@@ -18,7 +19,8 @@ function App(){
         <Route path='/gap' element={<Gap/>}/>
         <Route path='lac' element={<Lac/>}/>
       </Routes>
-        </div>     
+        </div>
+        <Footer/>     
       </>
       );
        }

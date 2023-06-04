@@ -49,3 +49,12 @@ body{
     background-color:darkslategray;
 } 
 
+.footer {
+    background-color: rgb(46, 54, 46);
+    border-top:2px solid red;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    font-size: 25px;
+   }

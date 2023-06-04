@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSlider, {Slide} from 'hero-slider';
 import '../styles/Gap.css'
+import {useTranslation} from 'react-i18next';
 
 
 const image1 = '../image/4stan.jpg';
@@ -14,9 +15,12 @@ const image8 = '../image/No-Image.jpg';
 
 
 const Gap = () => {
+
+  const {t}= useTranslation();
+
   return (
     <>
-    <h2>Gallery And Partners</h2>
+    <h2>{t('gallery_and_partners')}</h2>
 
    {/* gallery */}
 

@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+import {useTranslation} from 'react-i18next';
 
 
 const AboutUs = () => {
+
+  const {t}= useTranslation();
+
   return (
     <>
-    <h2>About Us</h2>
-    <p>With dedicated work from 2003 until today, we have grown into a leader in the real estate market. 
-      We are primarily focused on real estate sales, but we also offer rental properties.......</p>
+    <h2>{t('about_us')}</h2>
+    <p>{t('about_us_p1')}</p>
+    <img src='../image/image3.avif' alt=''/>
       </>
   )
 }
