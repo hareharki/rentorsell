@@ -2,10 +2,25 @@ import React from 'react'
 import MyComponent from '../components/MapContainer/MyComponent'
 import { Container, Row, Col } from "react-bootstrap";
 import {useTranslation} from 'react-i18next';
+import emailjs from 'emailjs-com';
 
 const Lac = () => {
 
   const {t}= useTranslation();
+
+  function sendEmail(e){
+    e.preventDefault();
+
+    emailjs.sendForm('service_u5ljzf8' , 
+    'template_bw0wz5u',
+    e.target, 
+    'K6sd_FegYTMVNRf-o'
+    ).then(res=>{
+      console.log(res);
+    }).catch(err=>{
+      console.log(err)
+    }).then(()=> alert("E-mail sent succesfully"));
+  }
   
   return (
     <>
@@ -33,7 +48,7 @@ const Lac = () => {
             </address>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form  className="contact__form w-100">
+            <form  className="contact__form w-100" onSubmit={sendEmail} >
               <Row>
                 <Col lg="6" className="form-group">
                   <input
@@ -56,7 +71,7 @@ const Lac = () => {
                   />
                 </Col>
               </Row>
-              <textarea
+              <textarea 
                 className="form-control rounded-0"
                 id="message"
                 name="message"

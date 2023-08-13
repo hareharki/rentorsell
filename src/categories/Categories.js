@@ -1,9 +1,6 @@
 
 
-const Categories=
-
- [
-
+const Categories= [
 
     {
         id:1,

@@ -1,13 +1,13 @@
 .container{
    display: block;
    column-count: 3;
-   column-gap: 100px;
-   background-color: antiquewhite;
+   column-gap: 50px;
+   background-color: white;
 }
 
 .menu {
     display: grid;
-    width: 120px;
+    width: 100px;
     position: fixed;
     background-color:aquamarine;
     border: 2px black;
@@ -25,20 +25,28 @@
     background-color: aquamarine;
     width: fit-content;
     height: fit-content;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-right: 20px;
+    padding-left: 5px;
+    margin-bottom: 20px;
     margin-left: 120px;
 }
 
 
 .card{
     display: block;
+    height: 500px;
+    width: 410px;
     background-color: brown;
     color: antiquewhite;
+    border-radius: 30px;
 }
 .card-img{
     display: block;
     width: 400px;
     height: 200px;
+    padding-top: 10px;
     justify-items: center;
     
 }
