@@ -50,6 +50,8 @@ body{
 } 
 
 .footer {
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(46, 54, 46);
     border-top:2px solid red;
     position: fixed;
@@ -58,3 +60,11 @@ body{
     color: white;
     font-size: 25px;
    }
+
+.dropdown-menu{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style:none;
+    gap: 1rem;
+}

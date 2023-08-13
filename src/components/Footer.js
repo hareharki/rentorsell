@@ -37,29 +37,21 @@ export const Footer = () => {
 
   return (
     <div className='footer'>
-    <div className='language-select'>
-    <div className="d-flex justify-content-end align-items-center language-select-root">
     <div className="dropdown">
-  <button 
-   className="btn btn-link dropdown-toggle"
-   type="button"
-   id="dropdownMenuButton1"
-   data-bs-toggle="dropdown"
-   aria-expanded="false"
-   >
-    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+  <button>
+    <ul className="dropdown-menu">
       <li> <span className="dropdown-item-text">{t('language')}</span></li>
       {languages.map(({ code, name, country_code }) => (
-              <li key={country_code}>
-                <a
-                  href="#"
-                  className={classNames('dropdown-item', {
-                    disabled: currentLanguageCode === code,
-                  })}
-                  onClick={() => {
-                    i18next.changeLanguage(code)
-                  }}
-                >
+              <li
+               key={country_code}
+               className={classNames('dropdown-item', {
+                disabled: currentLanguageCode === code,
+              })}
+              onClick={() => {
+                i18next.changeLanguage(code)
+              }}
+               >
+               
                   <span
                     className={{country_code}}
                     style={{
@@ -67,13 +59,11 @@ export const Footer = () => {
                     }}
                   ></span>
                   {name}
-                </a>
+               
               </li>
             ))}
     </ul>
   </button>
-  </div>
-  </div>
   </div>
   </div>
   )

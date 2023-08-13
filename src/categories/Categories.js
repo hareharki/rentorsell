@@ -1,6 +1,10 @@
-import React from 'react'
 
-const Categories = [
+
+const Categories=
+
+ [
+
+
     {
         id:1,
         title: 'Apartment',
