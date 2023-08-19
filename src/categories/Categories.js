@@ -1,4 +1,4 @@
-
+import i18next from "i18next";
 
 const Categories= [
 
@@ -45,6 +45,7 @@ const Categories= [
         image: '../image/4stan.jpg'
     },
 ];
+
 
 
 export default Categories

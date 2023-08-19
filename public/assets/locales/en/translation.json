@@ -18,6 +18,10 @@
     "pantrys" : "Pantrys",
     "rent" : "Rent",
     "all" : "All",
-    "description_of_realestate" : "An attractive property in a good location with an excellent layout and maximum use of space."
+    "description_of_realestate" : "An attractive property in a good location with an excellent layout and maximum use of space.",
+    "title" : "TITLE: ",
+    "price" : "PRICE: ",
+    "category" : "CATEGORY: ",
+    "description" : "DESCRITPTION: "
 }
 

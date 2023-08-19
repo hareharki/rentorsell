@@ -43,10 +43,10 @@ const RealEstates = () =>{
  <div className="card">
   <img src={image} className="card-img" alt=''/>
   <div className="card-body">
-    <h5 className="card-title">{title}</h5>
-    <p>{price}</p>
-    <p>{category}</p>
-    <p className="card-text">{t('description_of_realestate')}</p>
+    <h5 className="card-title">{t('title')}{title}</h5>
+    <p> {t('price')}{price}</p>
+    <p>{t('category')}{category}</p>
+    <p className="card-text">{t('description')}{t('description_of_realestate')}</p>
     <button className="btn btn-primary" ><a href='Lac' className='a'>{t('request_form')}</a></button>
   </div>
   </div>
