@@ -19,5 +19,9 @@
         "rent" : "Mieten",
         "all" : "Alle",
         "description_of_realestate"  :"Eine attraktive Immobilie in guter Lage mit hervorragender Raumaufteilung und maximaler Raumausnutzung.",
-        "apartment" : "Wohnung"
+        "apartment" : "Wohnung",
+        "title" : "TITEL: ",
+        "price" : "PREIS: ",
+        "category" : "KATEGORIE: ",
+        "description" : "BESCHREIBUNG: "
 }
